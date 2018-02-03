@@ -1,4 +1,4 @@
-$ui-highlight-color: #d3d900;
+
 
 @import 'application';
 
@@ -501,6 +501,10 @@ $ui-highlight-color: #d3d900;
 
  .search__icon .fa {
    color: #14171a;
+ }
+
+ .search__input:focus {
+   background: rgba(20, 23, 26, 0.08);
  }
 
  /*----------------------------------------*/
@@ -1068,23 +1072,26 @@ $ui-highlight-color: #d3d900;
  }
 
  .account__header .icon-button {
-   color: #fff;
+   color: #ffffff;
+   text-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
  }
 
  .account--follows-info {
-   color: #fff;
-   font-size: 11px;
-   font-weight: 500;
-   text-transform: uppercase;
-   display: inline-block;
-   vertical-align: top;
-   background-color: rgba(0, 0, 0, 0.4);
-   padding: 4px;
-   border-radius: 4px;
-   opacity: .7;
-   position: absolute;
-   top: 13px;
-   right: 60px;
+     color: #fff;
+     font-size: 11px;
+     line-height: 16px;
+     font-weight: 500;
+     text-transform: uppercase;
+     display: inline-block;
+     vertical-align: top;
+     background-color: rgba(0, 0, 0, 0.4);
+     padding: 4px 0.8em;
+     border-radius: 4px;
+     opacity: 1;
+     position: absolute;
+     top: 13px;
+     right: 60px;
+     left: auto;
  }
 
  /*----------------------------------------*/
