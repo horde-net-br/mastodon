@@ -705,6 +705,7 @@ en:
     title: "%{instance} Terms of Service and Privacy Policy"
   themes:
     default: Mastodon
+    horde: "Horde Theme"
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
