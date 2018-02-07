@@ -490,6 +490,10 @@
    top: 3px;
  }
 
+ .column .item-list article {
+     width: 98%;
+ }
+
  /*----------------------------------------*/
  /*                 Search                 */
  /*----------------------------------------*/
@@ -811,7 +815,7 @@
    margin: 0 auto;
    padding: 0;
    overflow: hidden;
-   width: 100%;
+   width: 96%;
    max-width: 460px;
  }
 
@@ -851,17 +855,33 @@
    background: #fff;
  }
 
+ .focusable:focus {
+   outline:0;
+   background: rgba(220, 227, 230, 0.3);
+ }
+
+ .focusable:focus .status.status-direct {
+   background: rgba(20, 23, 26, 0.05);
+ }
+
+ .focusable:focus .status.status-direct.muted {
+   background:transparent
+ }
+
+ .focusable:focus .detailed-status,
+ .focusable:focus .detailed-status__action-bar {
+   background: rgba(20, 23, 26, 0.05);
+ }
+
+ .focusable:focus .status__content a {
+   color: rgba(20, 23, 26, 0.8);
+ }
+
  .status {
-   margin: 0 1em 0 0;
+   margin: 0 0 0 0;
    padding: 1em 30px 1em 68px;
    border-bottom: 0;
 
- }
-
- .status.status-direct {
-   border: 10px solid rgba(20, 23, 26, 0.1);
-   border-collapse: collapse;
-   background: #fff;
  }
 
  .status__info {
@@ -869,6 +889,11 @@
    padding: 0.5em 0 0.8em;
 }
 
+ .status.status-direct {
+   border: 10px solid rgba(20, 23, 26, 0.1);
+   border-collapse: collapse;
+   background: #fff;
+ }
 
  .status.status-direct::after {
    content: "";
@@ -1089,7 +1114,7 @@
      border-radius: 4px;
      opacity: 1;
      position: absolute;
-     top: 13px;
+     top: 15px;
      right: 60px;
      left: auto;
  }
@@ -1255,6 +1280,18 @@
    padding: 0 10px;
    display: inline-block;
  }
+
+ /*----------------------------------------*/
+ /*          Keyboard Shortcuts            */
+ /*----------------------------------------*/
+
+ .keyboard-shortcuts kbd {
+     display: inline-block;
+     padding: 3px 5px;
+     background-color: var(--txt-color-bkg);
+     border: 1px solid #1f232b;
+ }
+
 
  @media (min-width: 1200px) {
    .drawer {
